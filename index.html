@@ -517,14 +517,11 @@
                 element.setAttribute('placeholder', translations[lang][placeholderKey] || placeholderKey);
             });
 
-            // Animación de entrada
+            // Animación de entrada simple (solo CSS)
             const introOverlay = document.querySelector('.intro-overlay');
             setTimeout(() => {
                 introOverlay.classList.add('fade-out');
-            }, 2000); // Duración antes de desvanecerse
-            setTimeout(() => {
-                introOverlay.style.display = 'none';
-            }, 3000); // Tiempo total para ocultar
+            }, 3000); // Duración de 3 segundos antes de desvanecerse
         });
 
         // Menú móvil
